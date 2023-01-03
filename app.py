@@ -33,7 +33,6 @@ class users(db.Model):
 def login():
     if request.method=='POST':
         # user1=db.session.execute(db.select(users.password).where(users.email=="ankur@gmail.com")).scalars()
-        # print(user1)
         uname = request.form["uname"]
         passw = request.form["passw"]
         token = request.form["token"]
